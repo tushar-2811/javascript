@@ -4,6 +4,7 @@ import HeaderWithButton from "./components/HeaderWithButton"
 import Todos from "./components/Todos"
 import SingleTodo from "./components/SingleTodo"
 import { useState } from "react"
+import IncomeTax from "./components/IncomeTax"
 
 function App() {
   const [id , setId] = useState(1);
@@ -30,6 +31,9 @@ function App() {
        <button onClick={(e) => handleOnClick(e.target.value)} value={3}>3</button>
 
        <SingleTodo id={id} />
+
+       <h1>Hello</h1>
+       <IncomeTax/>
  
     </>
   )
