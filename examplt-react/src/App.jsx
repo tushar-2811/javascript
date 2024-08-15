@@ -7,13 +7,18 @@ import { useState } from "react"
 import IncomeTax from "./components/IncomeTax"
 import Assignment from "./components/Assignment"
 import Assignment2 from "./components/Assignment2"
+import { MemoAssignment1 } from "./components/MemoAssignment1"
+import { Memo2 } from "./components/Memo2"
+import { Memo3 } from "./components/Memo3"
+import { CallAssign1 } from "./components/CallAssign1"
+import { CallAssign2 } from "./components/CallAssign2"
 
 function App() {
-  const [id , setId] = useState(1);
+  // const [id , setId] = useState(1);
 
-  function handleOnClick(id){
-    setId(id);
-  }
+  // function handleOnClick(id){
+  //   setId(id);
+  // }
   return (
     <>
      {/* <HeaderWithButton givenTitle={"Harkirat"} /> 
@@ -37,9 +42,15 @@ function App() {
        <h1>Hello</h1>
        <IncomeTax/> */}
 
-       <Assignment/>
-       <Assignment2/>
- 
+       {/* <Assignment/>
+       <Assignment2/> */}
+       {/* <MemoAssignment1/> */}
+      {/* <Memo2/> */}
+
+       {/* <Memo3/> */}
+
+       {/* <CallAssign1/> */}
+       <CallAssign2/>
     </>
   )
 }
