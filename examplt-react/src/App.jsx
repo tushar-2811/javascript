@@ -5,6 +5,8 @@ import Todos from "./components/Todos"
 import SingleTodo from "./components/SingleTodo"
 import { useState } from "react"
 import IncomeTax from "./components/IncomeTax"
+import Assignment from "./components/Assignment"
+import Assignment2 from "./components/Assignment2"
 
 function App() {
   const [id , setId] = useState(1);
@@ -14,7 +16,7 @@ function App() {
   }
   return (
     <>
-     <HeaderWithButton givenTitle={"Harkirat"} /> 
+     {/* <HeaderWithButton givenTitle={"Harkirat"} /> 
      <Header title={"Tushar"} />
 
      <Wrapper>
@@ -33,7 +35,10 @@ function App() {
        <SingleTodo id={id} />
 
        <h1>Hello</h1>
-       <IncomeTax/>
+       <IncomeTax/> */}
+
+       <Assignment/>
+       <Assignment2/>
  
     </>
   )
