@@ -9,6 +9,7 @@ const Header = () => {
 
       <button onClick={() => navigate('/')} >Home</button>
       <button onClick={() => navigate('/dashboard')} >Dashboard</button>
+      <button onClick={() => navigate('/todo')} >My Todo</button>
     </div>
   )
 }

@@ -5,6 +5,7 @@ const Dashboard = React.lazy(() => import('./pages/Dashboard'))
 import LandingPage from './pages/LandingPage'
 import Header from './components/Header'
 import Loader from './components/Loader'
+import Todo from './pages/Todo';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
               <Suspense fallback={<Loader/>}>
                 <Dashboard/>
               </Suspense>
-              } />      
+              } />
+              <Route path='/todo' element={<Todo/>} />      
       </Routes>
       </BrowserRouter> 
     </>
